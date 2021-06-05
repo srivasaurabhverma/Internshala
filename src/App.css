@@ -1,38 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  overflow-y: hidden;
+}
 .App {
-  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.yellow {
+  width: 55vw;
+  height: 95vh;
+  background-image: url("./Images/Login\ \(2\).jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -11vw;
+  /* bottom: 0;  */
+  top: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gray1 {
+  width: 200px;
+  height: 200px;
+  background-image: url("./Images/Bubble\ \(2\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.gray2 {
+  position: absolute;
+  width: 386px;
+  height: 181px;
+  background-image: url("./Images/Bubble\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 30vw;
+}
+.title {
+  position: absolute;
+  width: 152px;
+  height: 59px;
+  left: 140px;
+  top: 70px;
+  background-image: url("./Images/DOOF.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer {
+  position: absolute;
+  bottom: 4vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 20px;
+  left: 213px;
+  cursor: pointer;
+}
+.terms {
+  font-family: Montserrat;
+  font-style: normal;
+  /* font-weight: 100; */
+  font-size: x-small;
+  /* line-height: 22px; */
+  /* identical to box height */
+
+  /* Dark */
+
+  color: #333333;
+  margin-right: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.services {
+  font-family: Montserrat;
+  font-style: normal;
+  /* font-weight: 300; */
+  font-size: x-small;
+  /* line-height: 22px; */
+  /* identical to box height */
+
+  /* Dark */
+
+  color: rgba(51, 51, 51, 1);
+  left: 357px;
+  margin-left: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 1174px) {
+    .yellow{
+        /* background-size: cover; */
+        width: 60vw;
+        z-index: 1;
+    }
+    .gray2{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 1081px) {
+    .yellow{
+        background-size: cover;
+        right:0vw;
+    }
+     
+}
+
+@media only screen and (max-width: 866px) {
+    .yellow{
+        background-size: contain;
+        right:0vw;
+        
+    }
+     
+}
+
+@media only screen and (max-width: 733px) {
+    .title{
+        top:3vh;
+        left: 5vw;
+        /* width: fit-content; */
+        background-size: contain;
+    }
+
+    footer{
+        left:57px;
+    }
+
+    .yellow{
+        height: 72vh;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 733px) {
+    .title{
+        top:3vh;
+        left: 5vw;
+        /* width: fit-content; */
+        background-size: contain;
+        z-index: 100;
+    }
+
+    footer{
+        left:57px;
+    }
+
+    .yellow{
+        height: 72vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+@media only screen and (max-width: 595px) {
+    .title{
+        top:3vh;
+        left: 5vw;
+        /* width: fit-content; */
+        background-size: contain;
+    }
+
+    footer{
+        left:57px;
+    }
+
+    .yellow{
+        height: 72vh;
+        width: 250px;
+        top:-16vh;
+        right: 0;
+        background-size: contain;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 437px) {
+    
+     footer{
+          
+         bottom: 0; 
+         left:20px;
+     }
+
+     .yellow{
+          display: none;
+     }
+
+      
 }

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.Form {
+  position: absolute;
+  width: 540px;
+  height: 425px;
+  left: 8vw;
+  top: 21vh;
+  z-index: 2;
+  /* background-color: red; */
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  /* padding: 20px 30px; */
+}
+.login_title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.Email {
+  position: relative;
+  top: 27px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* background: rgba(165, 165, 165, 1); */
+  color: rgba(165, 165, 165, 1);
+}
+.Password {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 40px;
+  color: rgba(165, 165, 165, 1);
+}
+
+.Password input {
+  margin-top: 4px;
+}
+.Email input {
+  margin-top: 4px;
+}
+
+#Login_btn {
+  width: 400px;
+  height: 50px;
+  margin-top: 40px;
+  background: #f7d832;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.last {
+  margin-top: 19px;
+  width: fit-content;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+#fogot_password {
+  position: fixed;
+  width: 120px;
+  height: 17px;
+  left: 535px;
+  top: 328px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  cursor: pointer;
+
+  /* Dark */
+
+  color: #333333;
+}
+
+@media only screen and (max-width: 1260px) {
+    #fogot_password{
+        top:310px;
+    }
+}
+
+@media only screen and (max-width: 1173px) {
+    #fogot_password{
+        left:498px;
+    }
+}
+@media only screen and (max-width: 1173px) {
+    #fogot_password{
+        position: relative;
+        left:0;
+        top:0;
+        margin-top: 10px;
+    }
+
+     
+}
+
+@media only screen and (max-width: 860px) {
+    input{
+        width: 301px;
+    }
+    #Login_btn{
+        width: 301px;
+    }
+    .last{
+        font-size: 13px;
+    }
+
+}
+
+ 
